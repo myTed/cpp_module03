@@ -3,20 +3,15 @@
 #include <iostream>
 
 ScavTrap::ScavTrap()
-: ClapTrap(){
+: ClapTrap("null", 100, 50, 20)
+{
 	std::cout << "Defualt Derived Constructor called!\n";
-	setHitPoint(100);
-	setEnergyPoint(50);
-	setAttackDamage(20);
 }
 
 ScavTrap::ScavTrap(const std::string& name)
-: ClapTrap(name)
+: ClapTrap(name,100, 50 , 20)
 {
 	std::cout << "Non Default Derived Constructor called\n";
-	setHitPoint(100);
-	setEnergyPoint(50);
-	setAttackDamage(20);
 }
 
 ScavTrap::ScavTrap(const ScavTrap& rScav)

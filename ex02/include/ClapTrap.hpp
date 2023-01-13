@@ -12,10 +12,10 @@ private:
 	unsigned int	_energyPoint;
 	unsigned int	_attackDamage;
 protected:
-	void	setName(const std::string& name);
-	void	setHitPoint(unsigned int hitPoint);
-	void	setEnergyPoint(unsigned int energyPoint);
-	void	setAttackDamage(unsigned int attackDamage);
+	ClapTrap(const std::string& name,
+				unsigned int hitPoint,
+				unsigned int energyPoint,
+				unsigned int attackDamage);
 public:
 	ClapTrap();
 	ClapTrap(const std::string& name);

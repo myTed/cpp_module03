@@ -2,21 +2,15 @@
 #include <iostream>
 
 FragTrap::FragTrap()
-: ClapTrap()
+: ClapTrap("null", 100, 100, 30)
 {
 	std::cout << "Default Derived Constructor called!\n";
-	setHitPoint(100);
-	setEnergyPoint(100);
-	setAttackDamage(30);
 }
 
 FragTrap::FragTrap(const std::string& name)
-: ClapTrap(name)
+: ClapTrap(name, 100, 100,30)
 {
 	std::cout <<"Non Default Derived Constructor called\n";
-	setHitPoint(100);
-	setEnergyPoint(100);
-	setAttackDamage(30);
 }
 
 FragTrap::FragTrap(const FragTrap& rFrag)

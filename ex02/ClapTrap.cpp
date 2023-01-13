@@ -20,6 +20,20 @@ ClapTrap::ClapTrap(const std::string& name)
 	_attackDamage = 10;
 }
 
+ClapTrap::ClapTrap(
+	const std::string& name,
+	unsigned int hitPoint,
+	unsigned int energyPoint,
+	unsigned int attackDamage
+)
+{
+	std::cout << "Clap Trap Non Default+ Constructor called!\n";
+	_name = name;
+	_hitPoint = hitPoint;
+	_energyPoint = energyPoint;
+	_attackDamage = attackDamage;
+}
+
 ClapTrap::~ClapTrap()
 {
 	std::cout << "Deconstructor called!\n";
@@ -82,24 +96,3 @@ void	ClapTrap::beRepaired(unsigned int amount)
 	_hitPoint = (static_cast<long long int>(_hitPoint) + amount > UINT_MAX)? UINT_MAX : _hitPoint + amount;
 	std::cout << "ClapTrap beRepaired amount : " << amount << "\n";
 }
-
-void	ClapTrap::setName(const std::string& name)
-{
-	_name = name;
-}
-	
-void	ClapTrap::setHitPoint(unsigned int hitPoint)
-{
-	_hitPoint = hitPoint;
-}
-	
-void	ClapTrap::setEnergyPoint(unsigned int energyPoint)
-{
-	_energyPoint = energyPoint;
-}
-
-void	ClapTrap::setAttackDamage(unsigned int attackDamage)
-{
-	_attackDamage = attackDamage;
-}
-
