@@ -3,30 +3,30 @@
 
 int	main(void)
 {
-	ClapTrap	a;
-	ClapTrap	b("kyolee");
-	ClapTrap	c("kyolee2");
+	ClapTrap	kNull;
+	ClapTrap	kyolee1("kyolee1");
+	ClapTrap	kyolee2("kyolee2");
 
 
 	std::cout << "===================\n";
-	a.printInfo();
-	b.printInfo();
-	c.printInfo();
+	kNull.printInfo();
+	kyolee1.printInfo();
+	kyolee2.printInfo();
 	std::cout << "====================\n";
 
-	a.attack("kyolee");
-	a.beRepaired(100);
-	b.attack("kyolee2");
-	b.printInfo();
-	c.takeDamage(10);
-	c.printInfo();
+	kNull.attack("kyolee");
+	kNull.beRepaired(100);
+	kyolee1.attack("kyolee2");
+	kyolee1.printInfo();
+	kyolee2.takeDamage(10);
+	kyolee2.printInfo();
 	//c.takeDamage(10);
 	//c.printInfo();
 	//c.takeDamage(4294967297);
-	c.beRepaired(100);
-	c.printInfo();
-	c.beRepaired(1);
-	c.printInfo();
+	kyolee2.beRepaired(100);
+	kyolee2.printInfo();
+	kyolee2.beRepaired(1);
+	kyolee2.printInfo();
 
 	return (0);
 }

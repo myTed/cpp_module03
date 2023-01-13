@@ -8,7 +8,7 @@ FragTrap::FragTrap()
 }
 
 FragTrap::FragTrap(const std::string& name)
-: ClapTrap(name, 100, 100,30)
+: ClapTrap(name, 100, 100, 30)
 {
 	std::cout <<"Non Default Derived Constructor called\n";
 }
@@ -33,6 +33,6 @@ FragTrap& FragTrap::operator=(const FragTrap& rFrag)
 
 void	FragTrap::highFiveGuys(void)
 {
-	std::cout << "a Positive High Five request!\n";
+	std::cout << "a Positive High Five request!\n\n";
 }
 

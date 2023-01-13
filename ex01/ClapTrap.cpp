@@ -8,7 +8,7 @@ ClapTrap::ClapTrap()
 	_name = "null";
 	_hitPoint = 10;
 	_energyPoint = 10;
-	_attackDamage = 10;
+	_attackDamage = 0;
 }
 
 ClapTrap::ClapTrap(const std::string& name)
@@ -17,7 +17,7 @@ ClapTrap::ClapTrap(const std::string& name)
 	_name = name;
 	_hitPoint = 10;
 	_energyPoint = 10;
-	_attackDamage = 10;
+	_attackDamage = 0;
 }
 
 ClapTrap::ClapTrap(
@@ -94,6 +94,6 @@ void	ClapTrap::beRepaired(unsigned int amount)
 	}
 	_energyPoint--;
 	_hitPoint = (static_cast<long long int>(_hitPoint) + amount > UINT_MAX)? UINT_MAX : _hitPoint + amount;
-	std::cout << "ClapTrap beRepaired amount : " << amount << "\n";
+	std::cout << "ClapTrap " << _name << " be Repaired amount : " << amount << "\n";
 }
 

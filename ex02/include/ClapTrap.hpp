@@ -2,8 +2,6 @@
 #define _CLAPTRAP_HPP
 #include <string>
 
-
-
 class	ClapTrap
 {
 private:
@@ -19,7 +17,7 @@ protected:
 public:
 	ClapTrap();
 	ClapTrap(const std::string& name);
-	~ClapTrap();
+	virtual ~ClapTrap();
 	ClapTrap(const ClapTrap& rClap);
 	ClapTrap& operator=(const ClapTrap& rClap);
 	void	printInfo();

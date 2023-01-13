@@ -4,12 +4,12 @@
 int	main(void)
 {
 	ScavTrap 	kyolee("kyolee");
-	ClapTrap	kyolee1;
+	ClapTrap	kyolee1("kyolee1");
 
 	kyolee1.printInfo();
 	kyolee.guardGate();
 	kyolee.printInfo();
-	kyolee.attack("kyolee2");
+	kyolee.attack("kyolee1");
 	/*
 	ScavTrap 	kyolee2;
 	ClapTrap 	kyolee3;
@@ -21,7 +21,7 @@ int	main(void)
 	
 	kyolee3 = kyolee2;
 	kyolee3.printInfo();
-
+	
 	ClapTrap	*pKyolee = new ScavTrap;
 	pKyolee->printInfo();
 	

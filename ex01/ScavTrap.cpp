@@ -34,5 +34,5 @@ ScavTrap& ScavTrap::operator=(const ScavTrap& rScav)
 	
 void	ScavTrap::guardGate()
 {
-	std::cout << "I'm gate Mode\n";
+	std::cout << "I'm in Gate Keeper Mode\n\n";
 }
